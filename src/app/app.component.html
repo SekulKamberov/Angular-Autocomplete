@@ -1,0 +1,9 @@
+<router-outlet></router-outlet>
+
+<label>Search Here</label><br/>
+
+<input type="text" (keyup)="searchOnKeyUp($event)" /><br/>
+
+<select>
+  <option *ngFor="let sr of results" [value]="sr">{{sr}}</option>
+</select>
